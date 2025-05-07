@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ruleset name="Teedy‑Metrics‑Rules"
+         xmlns="http://pmd.sourceforge.net/ruleset/2.0.0"
+         xsi:noNamespaceSchemaLocation="http://pmd.sourceforge.net/ruleset_xml_schema.xsd"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+    <description>
+        Practice 7 – 只检查 LoC、CC、WMC、CBO、LCOM 五个指标。
+    </description>
+
+    <!-- 1 LoC -->
+    <rule ref="category/java/design.xml/MutableStaticState" />
+
+    <!-- 2 Cyclomatic Complexity -->
+    <rule ref="category/java/design.xml/NPathComplexity" />
+
+    <!-- 3 WMC -->    <!-- 5 LCOM -->
+    <rule ref="category/java/design.xml/GodClass" />
+
+    <!-- 4 CBO -->
+    <rule ref="category/java/design.xml/CouplingBetweenObjects" >
+
+    </rule>
+
+</ruleset>
